@@ -85,4 +85,5 @@ For more information on using the Angular CLI, including detailed command refere
 - 12. Mostrar las Imagenes de los Gifs
 - 13. Mejorar Funcionalidad del SideBar
 - 14. Local Storege (Persistencia Local)
+- 15. Lectura del LocalStorage
 ```
