@@ -71,5 +71,6 @@ For more information on using the Angular CLI, including detailed command refere
 # Contenido del Modulo 7 del Curso de Angular
 
 ```bash
-- 1. Creación de un nuevo Proyecto
+- 1. Creación de un nuevo Proyecto.
+- 2. Diseño y Estructura Inicial del Proyecto.
 ```
