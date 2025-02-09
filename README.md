@@ -82,4 +82,5 @@ For more information on using the Angular CLI, including detailed command refere
 - 9. Realizar peticiones HTTP (HttpClientModule)
 - 10. Asignar un tipado de dato a una respuesta Http (https://app.quicktype.io/)
 - 11. Mostrar la información de los Gifs en Pantalla
+- 12. Mostrar las Imagenes de los Gifs
 ```
