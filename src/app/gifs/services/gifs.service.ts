@@ -49,7 +49,7 @@ export class GifsService {
       console.log(resp);
 
       this.gifsLis = resp.data;
-      console.log( {Gif: this.gifsLis});
+      // console.log( {Gif: this.gifsLis});
     })
 
 

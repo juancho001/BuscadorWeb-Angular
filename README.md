@@ -80,5 +80,6 @@ For more information on using the Angular CLI, including detailed command refere
 - 7. Validaciones del Servicio
 - 8. GiPhy Api Key (https://developers.giphy.com) se debe crear una cuentra gratuita para usar la api
 - 9. Realizar peticiones HTTP (HttpClientModule)
-- 10. colocar un tipado de dato a una respuesta Http (https://app.quicktype.io/)
+- 10. Asignar un tipado de dato a una respuesta Http (https://app.quicktype.io/)
+- 11. Mostrar la información de los Gifs en Pantalla
 ```
