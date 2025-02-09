@@ -75,4 +75,5 @@ For more information on using the Angular CLI, including detailed command refere
 - 2. Diseño y Estructura Inicial del Proyecto.
 - 3. Diseño del SideBar.
 - 4. Diseño del GifsComponents.
+- 5. @ViewChild - Referencia al HTML
 ```
