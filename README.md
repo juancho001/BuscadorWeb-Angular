@@ -79,4 +79,5 @@ For more information on using the Angular CLI, including detailed command refere
 - 6. Implementando el Services - GifsServices
 - 7. Validaciones del Servicio
 - 8. GiPhy Api Key (https://developers.giphy.com) se debe crear una cuentra gratuita para usar la api
+- 9. Realizar peticiones HTTP (HttpClientModule)
 ```

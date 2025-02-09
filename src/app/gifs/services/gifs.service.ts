@@ -1,3 +1,4 @@
+import { HttpClient, HttpParams } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 
 @Injectable({
@@ -7,8 +8,9 @@ export class GifsService {
 
   private _tagsHistory:string[] = [];
   private apiKey: string = 'T5zzapCAAMKYlzR8xMxb1Y450luVhy3j';
+  private ApiUrl: string = 'https://api.giphy.com/v1/gifs';
 
-  constructor() { }
+  constructor(private http:HttpClient) { }
 
   get tagsHistory():string[]{
     // TODO: Se utiliza el [...] para romper la referencia de la propiedad o del objeto
@@ -34,7 +36,19 @@ export class GifsService {
   public searchTag(tag:string):void{
     if(tag.length === 0) return;
     this.organizeHistory(tag);
+
+    const params = new HttpParams()
+    .set('api_key',this.apiKey)
+    .set('limit','10')
+    .set('q',tag)
+
+    this.http.get(`${this.ApiUrl}/search`,{params})
+    .subscribe(resp => {
+      console.log(resp);
+    })
+
+
     // this._tagsHistory.unshift(tag);
-    console.log(this._tagsHistory);
+    //console.log(this._tagsHistory);
   }
 }
