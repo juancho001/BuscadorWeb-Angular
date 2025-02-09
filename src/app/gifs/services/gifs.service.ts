@@ -14,8 +14,26 @@ export class GifsService {
     return [...this._tagsHistory];
   }
 
-  public searchTag(tag:string):void{
+  private organizeHistory(tag:string){
+    // TODO: transforma todas las palabras a minusculas debido a que TypeScript es CaseSensitive
+    tag = tag.toLowerCase();
+
+    // TODO: valida si el arreglo contiene la nueva palabra, de ser cierto crea un nuevo arreglo sin la nueva palabra
+    if(this._tagsHistory.includes(tag)){
+      this._tagsHistory = this._tagsHistory.filter((oldTag) => oldTag !== tag)
+    }
+
+    // TODO: ingresamos la nueva palabra al inicio del arreglo
     this._tagsHistory.unshift(tag);
+
+    // TODO: limitamos el arregro para que visualice 10 elementos
+    this._tagsHistory = this._tagsHistory.splice(0,10)
+  }
+
+  public searchTag(tag:string):void{
+    if(tag.length === 0) return;
+    this.organizeHistory(tag);
+    // this._tagsHistory.unshift(tag);
     console.log(this._tagsHistory);
   }
 }
