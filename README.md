@@ -73,4 +73,5 @@ For more information on using the Angular CLI, including detailed command refere
 ```bash
 - 1. Creación de un nuevo Proyecto.
 - 2. Diseño y Estructura Inicial del Proyecto.
+- 3. Diseño del SideBar.
 ```
