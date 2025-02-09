@@ -33,6 +33,7 @@ export class GifsService {
 
     // TODO: limitamos el arregro para que visualice 10 elementos
     this._tagsHistory = this._tagsHistory.splice(0,10)
+    this.saveStorage();
   }
 
   public searchTag(tag:string):void{
@@ -55,5 +56,10 @@ export class GifsService {
 
     // this._tagsHistory.unshift(tag);
     //console.log(this._tagsHistory);
+  }
+
+
+  private saveStorage():void{
+    localStorage.setItem('history',JSON.stringify(this._tagsHistory))
   }
 }

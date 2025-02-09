@@ -84,4 +84,5 @@ For more information on using the Angular CLI, including detailed command refere
 - 11. Mostrar la información de los Gifs en Pantalla
 - 12. Mostrar las Imagenes de los Gifs
 - 13. Mejorar Funcionalidad del SideBar
+- 14. Local Storege (Persistencia Local)
 ```
