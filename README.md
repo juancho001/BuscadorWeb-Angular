@@ -86,4 +86,11 @@ For more information on using the Angular CLI, including detailed command refere
 - 13. Mejorar Funcionalidad del SideBar
 - 14. Local Storege (Persistencia Local)
 - 15. Lectura del LocalStorage
+  ### Fin de la Sección 7 ###
+```
+
+# Contenido del Modulo 8 del Curso de Angular (Lazy Image + Modules)
+
+```bash
+- 1. Penssando en Componentes (Componente Card)
 ```
