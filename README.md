@@ -93,4 +93,5 @@ For more information on using the Angular CLI, including detailed command refere
 
 ```bash
 - 1. Penssando en Componentes (Componente Card)
+- 2. Lazy Loader
 ```

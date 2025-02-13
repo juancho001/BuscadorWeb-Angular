@@ -1,9 +1,13 @@
 
-  <div class="card-group">
+  <div class="card-group text-center">
     <div class="card">
-      <img [src]="gif.images.fixed_height_small.url" class="card-img-top w-100" [alt]="gif.title" >
+      <!-- <img [src]="gif.images.fixed_height_small.url" class="card-img-top w-100" [alt]="gif.title" > -->
+       <shared-lazy-image
+       [url]="gif.images.fixed_height_small.url"
+       [alt]="gif.title || 'No Title'"
+       ></shared-lazy-image>
       <div class="card-body">
-        <h5 class="card-title small">{{gif.title}}</h5>
+        <h5 class="card-title small">{{gif.title || 'No Title'}}</h5>
         <p class="card-text small">{{gif.alt_text}}</p>
       </div>
     </div>

@@ -1,0 +1,9 @@
+<div class="d-flex justyfy-content-center">
+  <img [src]="url" [alt]="alt" class="card-img-top animate__animated animate__fadeIn animate__delay-1s"
+  (load)="onLoad()"
+  [ngStyle]="{ display : hasLoader ? '' : 'none'}"
+  >
+
+  <img src="/assets/loader.svg" *ngIf="!hasLoader" width="45" height="45" class="mt-2" >
+</div>
+
